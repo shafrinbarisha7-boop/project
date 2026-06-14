@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            background-color: mistyrose;
+            margin: 0%;
+            padding: 0%;
+            scroll-behavior: smooth;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .carousel {
+            margin-top: 0%;
+            padding: 0%;
+        }
+
+        .carousel-item img {
+            display: block;
+            height: 70vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .banner {
+            height: 70vh;
+            background-image: url("banner.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+        }
+
+        .about-content h1 {
+            font-size: 50px;
+            color: gold;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#">
+                <img src="my logo.jpeg" width="40" height="40" class="me-2">
+                ✂ Alif Tailors
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offer">offer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review">review</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="mt-1" id="home">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="b2.jpeg" class="d-block w-100" alt="Tailor1">
+                </div>
+                <div class="carousel-item">
+                    <img src="shop.jpeg" class="d-block w-100" alt="Tailor2">
+                </div>
+                <div class="carousel-item">
+                    <img src="mach.jpeg" class="d-block w-100" alt="Tailor3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    <section class="banner d-flex align-items-center mt-3" id="about">
+        <div class="container text-white">
+            <h1 class="display-3 fw-bold text-warning">About Us</h1>
+            <p style="font-size:24px; line-height:1.8;">
+                Alif Tailors provides professional tailoring services for men,
+                women and kids. We specialize in custom stitching, alterations
+                and designer wear with perfect fitting and premium quality.</p>
+            <div class="text-center mt-3">
+                <a href="https://wa.me/919994223088" class="btn btn-dark btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#bookmodel">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="mt-0" id="services">
+        <section class="container-fluid border rounded shadow p-5 my-5">
+
+            <h2 class="text-center text-warning mb-5 mt-1" style="background-color:palevioletred; font-size:50px;">Our
+                Services</h2>
+            <h3 style="font-size: 30px;" class="mb-4 text-center text-black"><b>Men's Tailoring</b></h3>
+            <div class="row g-3 mb-5">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="shirt.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Shirt Stitching
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="pant.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Pant Stitching
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="suit.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Suit Stitching
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h3 style="font-size: 30px;" class="mb-4 text-center text-black"><b>Women's Tailoring</b></h3>
+            <div class="row g-3 mb-5">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="women drs4.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Blouse Stitching
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="women drs2.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Chudidhar Stitching
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="women dres3.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Gown Stitching
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h3 style="font-size: 30px;" class="mb-4 text-center text-black"><b>Alterations</b></h3>
+            <div class="row g-3">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="alter1.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Length Adjustment
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="alter2.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            Zip Replacement
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="alter3.jpeg" class="card-img-top" style="height:300px; object-fit:cover">
+                        <div class="card-body text-center">
+                            Fitting Correction
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+    <section class="mt-1" id="offer">
+        <h4 style="font-size:50px; background-color:palevioletred;" class="text-center text-warning mb-4">Special Offer
+        </h4>
+        <section class="container-fluid my-4">
+            <img src="b4.jpeg" class="img-fluid w-100 rounded shadow" style="height :700px; object-fit:cover;"
+                alt="Special offer banne" r>
+        </section>
+    </section>
+    <section class="container-fluid border rounded shadow p-4 w-100 mt-2" id="gallery">
+
+        <h2 class="text-center text-warning mb-4" style="background-color:palevioletred; font-size:50px;">
+            Gallery
+        </h2>
+
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <img src="G1.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4">
+                <img src="G2.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4">
+                <img src="G3.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4">
+                <img src="G4.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4">
+                <img src="G7.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4">
+                <img src="G6.jpeg" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container border rounded shadow p-4 my-5" id="review">
+
+        <h2 class="text-center text-warning mb-4" style="background-color:palevioletred; font-size: 50px;">
+            Customer Reviews
+        </h2>
+
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    ⭐⭐⭐⭐⭐
+                    <p><b>Excellent Service</b></p>
+                    <small><b>- Ahmed</b></small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    ⭐⭐⭐⭐⭐
+                    <p><b>Perfect Fitting</b></p>
+                    <small><b>- Aisha</b></small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    ⭐⭐⭐⭐⭐
+                    <p><b>Quality Stitching</b></p>
+                    <small><b>-Nasar</b></small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container border rounded shadow my-5" id="contact">
+
+        <h2 class="text-center text-warning mb-4 py-2 rounded"
+            style="background-color: palevioletred; font-size: 50px;">
+            Contact Us
+        </h2>
+
+        <div class="text-center">
+
+            <p class="mb-2"><i class="fa-solid fa-location-dot me-3"></i>Tirunelveli, Tamil Nadu</p>
+
+            <p class="mb-2"><i class="fa-solid fa-phone me-3"></i>+91 9994223088</p>
+
+            <p class="mb-2"><i class="fa-solid fa-envelope me-3"></i>Aliftailor@gmail.com</p>
+
+            <p class="mb-2"><i class="fa-solid fa-clock me-3"> </i>Mon - Sat : 9 AM - 10 PM</p>
+
+            <p class="mb-2"><i class="fa-brands fa-whatsapp me-3"></i>9994223088</p>
+
+            <p class="mb-2"><i class="fa-brands fa-instagram me-3"></i>._Alif_Tailor._16</p>
+
+            <a href="https://wa.me/919994223088" class="btn btn-warning px-4 py-2 fw-bold">
+                Contact Now
+            </a>
+        </div>
+    </section>
+    <div class="container-fluid bg-dark text-light text-center p-3 mt-4">
+        <p>Alif Tailor 2026.All Rights</p>
+    </div>
+</body>
+
+</html>
