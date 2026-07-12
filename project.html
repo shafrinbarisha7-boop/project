@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: mistyrose;
+            margin: 0%;
+            padding: 0%;
+            scroll-behavior: smooth;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .navbar-nav.nav-link:hover {
+            color: gold;
+            transform: translateY(-3px);
+        }
+
+        .navbar-nav.nav-link {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .home-banner {
+            height: 70vh;
+            background-image: url("shop4.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner {
+            height: 70vh;
+            background-image: url("banner.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .about-box {
+
+            background: linear-gradient(135deg, #fff5f8, #f3d6e4);
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            border: 3px solid #854f6C;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+
+        .about-img {
+
+            width: 100%;
+
+            height: 350px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            transition: 0.5s;
+
+        }
+
+
+
+        .about-img:hover {
+
+            transform: scale(1.08);
+
+        }
+
+
+
+        .about-box h2 {
+
+            font-size: 45px;
+
+            font-weight: bold;
+
+            color: #854f6C;
+
+            margin-bottom: 20px;
+
+        }
+
+
+
+        .about-box p {
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: #444;
+
+        }
+
+
+
+        .about-list p {
+
+            font-weight: 600;
+
+            color: #854f6C;
+
+        }
+
+
+
+        .about-btn {
+
+            background: #854f6C;
+
+            color: white;
+
+            padding: 12px 30px;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .about-btn:hover {
+
+            background: #d63384;
+
+            color: white;
+
+            transform: scale(1.05);
+
+            transition: 0.3s;
+
+        }
+
+        .card {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .card .btn {
+            border-radius: 20px;
+            padding: 10px 25px;
+            margin-bottom: 15px;
+        }
+
+        .offer-card {
+
+            background: linear-gradient(135deg, #fff5f8, #f3d6e4);
+            border-radius: 25px;
+            padding: 50px 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 3px solid #854f6C;
+
+        }
+
+
+        .offer-tag {
+
+            background: #854f6C;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+
+        }
+
+
+        .offer-card h1 {
+
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 25px;
+            color: #854f6C;
+
+        }
+
+
+        .offer-card h2 {
+
+            font-size: 35px;
+            font-weight: bold;
+            color: #333;
+
+        }
+
+
+        .offer-card p {
+
+            font-size: 20px;
+            color: #555;
+
+        }
+
+
+        .offer-card span {
+
+            color: #d63384;
+            font-weight: bold;
+
+        }
+
+
+        .offer-btn {
+
+            background: #854f6C;
+            color: white;
+            padding: 15px 40px;
+            font-size: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+
+        }
+
+
+        .offer-btn:hover {
+
+            background: #d63384;
+            color: white;
+
+        }
+
+        #gallery img {
+
+            border-radius: 30px;
+            padding: 40px;
+            background-color: linear-grandient(135deg, #fff5f8, #f3d6e4);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border: 4px solid #854f6c;
+
+
+        }
+
+
+        #gallery img:hover {
+
+            transform: scale(1.08);
+            border-color: #854f6C;
+        }
+
+        .review-card {
+
+            background: #fff5f8;
+
+            padding: 30px;
+
+            border-radius: 25px;
+
+            border: 3px solid #854f6C;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+            transition: 0.3s;
+
+        }
+
+
+        .review-card:hover {
+
+            transform: translateY(-10px);
+
+        }
+
+
+        .review-card img {
+
+            width: 80px;
+
+            height: 80px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 3px solid #854f6C;
+
+        }
+
+
+        .review-card h4 {
+
+            color: #854f6C;
+
+            margin-top: 15px;
+
+        }
+
+
+        .stars {
+
+            color: #d63384;
+
+            font-size: 20px;
+
+        }
+
+        .choose-card {
+
+            background: #fff5f8;
+            padding: 30px 20px;
+            border-radius: 25px;
+            border: 3px solid #854f6C;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            height: 250px;
+            transition: 0.4s;
+
+        }
+
+
+        .choose-card:hover {
+
+            transform: translateY(-10px);
+            background: #f3d6e4;
+
+        }
+
+
+        .choose-card i {
+
+            font-size: 45px;
+            color: #854f6C;
+            margin-bottom: 20px;
+
+        }
+
+
+        .choose-card h4 {
+
+            color: #854f6C;
+            font-weight: bold;
+
+        }
+
+
+        .choose-card p {
+
+            color: #555;
+            line-height: 1.6;
+
+        }
+
+        .contact-wrapper {
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 25px;
+            border: 3px solid #854f6c;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+        .contact-card {
+
+            text-align: center;
+
+            color: white;
+
+        }
+
+
+        .contact-card i {
+
+            background: pink;
+
+            color: white;
+
+            font-size: 25px;
+
+            width: 60px;
+
+            height: 60px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            margin: auto;
+
+            transition: 0.3s;
+
+        }
+
+
+        .contact-card:hover i {
+
+            transform: scale(1.1);
+
+            background: white;
+
+        }
+
+
+        .contact-card h5 {
+
+            margin-top: 15px;
+
+            color: black;
+
+            font-weight: bold;
+
+        }
+
+
+        .contact-card p {
+
+            color: black;
+
+            font-size: 16px;
+
+        }
+
+        .section-title {
+            border-radius: 25px;
+            padding: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer {
+            background: #854f6C;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        .footer h3 {
+            font-weight: bold;
+        }
+
+        .footer a {
+            font-size: 25px;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#">
+                <img src="image/my logo.jpeg" width="40" height="40" class="me-2">
+                ✂ Alif Tailors
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto gap-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offer">offer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review">review</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whychooseus">why choose us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section id="home" class="home-banner d-flex align-items-center">
+
+        <div class="container text-center text-dark">
+
+            <h1>
+                ✂ Alif Tailors
+            </h1>
+
+            <h2>
+                Perfect Stitch For Perfect Style
+            </h2>
+
+            <p style="font-size: 20px;">
+                Premium tailoring service for Men, Women & Kids.
+                Custom stitching with perfect fitting and modern designs.
+            </p>
+
+            <a href="#" class="btn btn-dark me-2" data-bs-toggle="modal" data-bs-target="#detailsModal">
+                Book Now
+            </a>
+
+        </div>
+    </section>
+    <section id="about" class="about-section my-5">
+
+        <div class="container">
+
+            <div class="about-box shadow">
+
+                <div class="row align-items-center">
+
+
+                    <div class="col-md-6">
+
+                        <img src="image/shop.jpeg" class="img-fluid about-img">
+
+                    </div>
+
+
+
+                    <div class="col-md-6">
+
+                        <h2>
+                            About Alif Tailors
+                        </h2>
+
+
+                        <p>
+                            Alif Tailors offers premium tailoring services for
+                            Men, Women and Kids. We create stylish outfits with
+                            perfect fitting, quality stitching and modern designs.
+                        </p>
+
+
+                        <p>
+                            Our expert tailors focus on customer satisfaction
+                            and on-time delivery.
+                        </p>
+
+
+                        <div class="about-list">
+
+                            <p>✂ Custom Stitching</p>
+
+                            <p>✨ Quality Designs</p>
+
+                            <p>⏰ On-Time Delivery</p>
+
+                        </div>
+
+
+                        <a href="#services" class="btn about-btn">
+                            View Services
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container my-5" id="services">
+        <h2 class="section-title text-center text-white" style="background-color: #854f6C;;font-size: 50px;">
+            Our Services
+        </h2>
+        <h3 style="font-size: 30px;" class="mb-4 text-center text-black"><b>Men's Tailoring</b></h3>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/shirt.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Shirt Stitching
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹500
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/pant.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Pant Stitching
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹700
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/suit.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Suit Stitching
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹2000
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <h3 style="font-size: 30px;" class="mb-4 text-center text-black my-5"><b>Women's Tailoring</b></h3>
+        <div class="row g-3 mb-5">
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/women drs4.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Blouse Stitching
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹800
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/women drs2.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Chudidhar Stitching
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹1200
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+
+                        Book Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/women dres3.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Gown Stitching
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹1700
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <h3 style="font-size: 30px;" class="mb-4 text-center text-black"><b>Alterations</b></h3>
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/alter1.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Length Adjustment
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹250
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+                        Book Now</button>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/alter2.jpeg" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        Zip Replacement
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹170</h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+                        Book Now</button>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image/alter3.jpeg" class="card-img-top" style="height:300px; object-fit:cover">
+                    <div class="card-body text-center">
+                        Fitting Correction
+                    </div>
+                    <h5 class="text-warning text-center">
+                        ₹200
+                    </h5>
+                    <button class="btn btn-dark d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">
+                        Book Now</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    </section>
+    <section id="offer" class="offer-section my-5">
+
+        <div class="container">
+
+            <div class="offer-card text-center">
+
+                <span class="offer-tag">
+                    Limited Offer
+                </span>
+
+                <h1>
+                    ✨ Deal Of The Day
+                </h1>
+
+                <h2>
+                    Flat 20% OFF On Tailoring Services!
+                </h2>
+
+                <p>
+                    Get premium stitching with perfect fitting.
+                    Offer valid for limited time only.
+                </p>
+
+                <h4>
+                    Use Code: <span>ALIF20</span>
+                </h4>
+
+
+                <a href="#contact" class="btn offer-btn">
+                    Book Your Deal
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="container my-5" id="gallery">
+
+        <h2 class="section-title text-white text-center" style="background-color: #854f6C; font-size: 50px;">
+            Gallery
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <img src="image/G1.jpeg" class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-md-4">
+                <img src="image/G2.jpeg" class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-md-4">
+                <img src="image/G3.jpeg" class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-md-4">
+                <img src="image/G4.jpeg" class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-md-4">
+                <img src="image/G7.jpeg" class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-md-4">
+                <img src="image/G6.jpeg" class="img-fluid rounded shadow">
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container my-5" id="review">
+
+        <h2 class="section-title text-white text-center" style="background-color:#854f6C;font-size:50px;">
+            Customer Reviews
+        </h2>
+
+
+        <div class="row g-4 mt-3">
+
+
+            <div class="col-md-4">
+
+                <div class="review-card text-center">
+
+                    <img src="r1.jpeg">
+
+                    <h4>Riyas</h4>
+
+                    <div class="stars">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p>
+                        "Excellent stitching and perfect fitting.
+                        Highly recommended service."
+                    </p>
+
+                    <small>Men's Tailoring</small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="review-card text-center">
+
+                    <img src="r2.jpeg">
+
+                    <h4>Aisha</h4>
+
+                    <div class="stars">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p>
+                        "Beautiful designs and quality finishing.
+                        Very satisfied."
+                    </p>
+
+                    <small>Women's Tailoring</small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="review-card text-center">
+
+                    <img src="r3.jpeg">
+
+                    <h4>Nasar</h4>
+
+                    <div class="stars">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p>
+                        "Quick delivery and excellent service."
+                    </p>
+
+                    <small>Alteration Service</small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="container my-5" id="whychooseus">
+
+        <h2 class="section-title text-white text-center" style="background-color:#854f6C;font-size:50px;">
+            Why Choose Us
+        </h2>
+
+
+        <div class="row g-4 mt-3">
+
+
+            <div class="col-md-3">
+                <div class="choose-card text-center">
+
+                    <i class="fa-solid fa-scissors"></i>
+
+                    <h4>Expert Tailors</h4>
+
+                    <p>
+                        Skilled tailors with years of experience and perfect stitching.
+                    </p>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="choose-card text-center">
+
+                    <i class="fa-solid fa-shirt"></i>
+
+                    <h4>Premium Designs</h4>
+
+                    <p>
+                        Modern and stylish designs with quality finishing.
+                    </p>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="choose-card text-center">
+
+                    <i class="fa-solid fa-ruler-combined"></i>
+
+                    <h4>Perfect Fitting</h4>
+
+                    <p>
+                        Custom fitting based on your comfort and style.
+                    </p>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="choose-card text-center">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h4>Quick Delivery</h4>
+
+                    <p>
+                        Fast and reliable service on time.
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="container my-5" id="contact">
+
+        <h2 class="section-title text-white text-center" style="background-color:#854f6C;font-size:50px;">
+            Contact Us
+        </h2>
+
+
+        <div class="contact-wrapper mt-4">
+
+            <div class="row g-4">
+
+
+                <div class="col-md-3">
+                    <div class="contact-card">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <h5>Call Us</h5>
+
+                        <p>+91 9994223088</p>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="contact-card">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <h5>Email</h5>
+
+                        <p>aliftailor@gmail.com</p>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="contact-card">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h5>Location</h5>
+
+                        <p>Tirunelveli, Tamil Nadu</p>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="contact-card">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h5>Opening Hours</h5>
+
+                        <p>
+                            Mon - Sat<br>
+                            9 AM - 10 PM
+                        </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-dark mt-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                    Enquire Now
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="modal fade" id="appointmentModal">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+
+                <div class="modal-header" style="background:#854f6C;color:white;">
+
+                    <h5 class="modal-title">
+                        Book Your Appointment
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+
+
+
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <input type="text" class="form-control mb-3" placeholder="Enter Your Name">
+
+
+                        <input type="number" class="form-control mb-3" placeholder="Phone Number">
+
+
+                        <select class="form-control mb-3">
+
+                            <option>Select Service</option>
+
+                            <option>Men's Tailoring</option>
+
+                            <option>Women's Tailoring</option>
+
+                            <option>Alteration</option>
+
+                        </select>
+
+
+
+                        <input type="date" class="form-control mb-3">
+
+
+                        <textarea class="form-control mb-3" placeholder="Your Message"></textarea>
+
+
+                        <button class="btn w-100" style="background:#854f6C;color:white;">
+                            Submit Appointment
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+            <h3>✂ Alif Tailors</h3>
+            <p>Perfect Stitch For Perfect Style</p>
+
+            <div>
+                <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <p class="mt-3">
+                © 2026 Alif Tailors | All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <div class="modal fade" id="detailsModal">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        ✂ Alif Tailors
+                    </h5>
+
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <h3>Explore Our Services</h3>
+
+                    <b>Our Services:</b>
+
+                    <ul>
+                        <li>👔 Men's Tailoring</li>
+                        <li>👗 Women's Tailoring</li>
+                        <li>✂ Alteration</li>
+                    </ul>
+
+                    <p><b>Phone:</b> +91 9994223088</p>
+
+                    <p><b>Email:</b> aliftailor@gmail.com</p>
+
+                    <p><b>Location:</b> Tirunelveli, Tamil Nadu</p>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+
+                    <button class="btn btn-success">
+                        WhatsApp Now
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
